@@ -1,0 +1,10 @@
+// index.scss rassemble tous les fichiers SASS
+// _settings.scss doit être déclaré en premier pour que sass connaisse les variables.
+
+@import "./settings";
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/footer";
+
+

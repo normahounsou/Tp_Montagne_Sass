@@ -1,0 +1,15 @@
+// ça prends tous les réglages, les h1, les li, les variables, les mixins....
+
+// Les variables
+$color1: pink;
+$color2: orange;
+$color3: cyan;
+$white: rgb(246, 246, 246);
+$black: rgb(14, 14, 14);
+
+// Les mixins sont un peu comme les variables au niveau des couleurs
+@mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

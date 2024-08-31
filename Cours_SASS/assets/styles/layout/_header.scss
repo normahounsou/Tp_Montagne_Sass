@@ -1,0 +1,24 @@
+// Le header, même si j'ai pas de réglages à lui donner, je peux juste le déclarer afin de mettre mon h1 ou autres choses dedans.En fait avec SASS, je n'ai généralement pas besoin de mettre de classe à mes éléments. 
+
+header {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+
+        @media screen and (max-width: 700px) {
+            font-size: 2rem;
+        }
+
+        &::after {
+            content: "*";
+            position: absolute;
+            transform: translateY(-6px);
+            color: $color1;
+            transition: 0.2s;
+        }
+        // et quand je te hover, je voudrais que ton after...
+        &:hover::after {
+            transform: scale(2);
+        }
+    }
+}
