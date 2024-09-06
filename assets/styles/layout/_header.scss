@@ -12,6 +12,34 @@ header {
             width: 40%;
             padding-top: 200px;
             margin: 0 auto 30px;
+
+            @media screen and (max-width: 1290px) {
+                width: 40%;
+                font-size: 3rem;
+            }
+
+            @media screen and (max-width: 1242px) {
+                 width: 42%;
+                 font-size: 2.8rem;
+            }
+
+            @media screen and (max-width: 1185px) {
+                 width: 50%;
+                 font-size: 2.5rem;
+            }
+
+            @media screen and (max-width: 865px) {
+                width: 70%;
+                font-size: 2.4rem;
+            }
+            @media screen and (max-width: 604px) {
+                width: 84%;
+                font-size: 2.2rem;
+            }
+            @media screen and (max-width: 475px) {
+                width: 95%;
+                font-size: 1.5rem;
+            }
          }
          
          p {
@@ -20,6 +48,13 @@ header {
              font-style: italic;
              text-align: center;
              margin-bottom: 50px;
+
+
+             @media screen and (max-width: 475px) {
+                font-size: 0.6rem;
+                width: 80%;
+                margin: 0 auto 50px;
+            }
          }
         
          a {

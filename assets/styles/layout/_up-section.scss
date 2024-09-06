@@ -32,6 +32,17 @@
             right: -50px;
             transform: translateX(-50px);
         }
+
+        @media screen and (max-width: 475px) {
+            font-size: 0.7rem;
+
+            &::before {
+                width: 20%;
+            }
+            &::after {
+                width: 20%;
+            }
+        }
     }
     h2 {
         text-align: center;
@@ -41,6 +52,11 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         padding-bottom: 40px;
+
+        @media screen and (max-width: 475px) {
+            font-size: 1.2rem;
+            width: 90%;
+        }
     }
     p {
         text-align: center;
@@ -52,6 +68,11 @@
         margin: 0 auto;
         font-weight: 600;
         padding-bottom: 40px;
+
+        @media screen and (max-width: 475px) {
+            font-size: 0.7rem;
+            width: 70%;
+        }
     }
 
     img {
