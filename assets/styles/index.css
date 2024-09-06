@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inter";
   src: url(../fonts/Inter/static/Inter_18pt-ExtraBold.ttf);
@@ -217,30 +218,45 @@ nav .icons li:hover {
   background: rgb(246, 246, 246);
   width: 70%;
   max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
+  margin: 0 auto 40px;
 }
-.first-section::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: rgb(218, 218, 218);
-  top: 1070px;
-}
-.first-section .up-section {
+
+.up-section {
   width: 80%;
   padding: 40px 0 50px;
   margin: 0 auto;
 }
-.first-section .up-section h3 {
+.up-section h3 {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 600;
   color: rgb(73, 73, 73);
   padding-bottom: 50px;
+  position: relative;
 }
-.first-section .up-section h2 {
+.up-section h3::before {
+  content: "";
+  height: 2px;
+  background: rgb(218, 218, 218);
+  width: 40%;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+.up-section h3::after {
+  content: "";
+  height: 2px;
+  background: rgb(218, 218, 218);
+  width: 40%;
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+.up-section h2 {
   text-align: center;
   font-size: 3rem;
   width: 65%;
@@ -249,7 +265,7 @@ nav .icons li:hover {
   letter-spacing: 3px;
   padding-bottom: 40px;
 }
-.first-section .up-section p {
+.up-section p {
   text-align: center;
   color: rgb(73, 73, 73);
   font-size: 0.8rem;
@@ -260,7 +276,217 @@ nav .icons li:hover {
   font-weight: 600;
   padding-bottom: 40px;
 }
-.first-section .up-section img {
+.up-section img {
   width: 100%;
   padding-bottom: 40px;
+}
+
+.down-section {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.down-section::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Positionne l'élément au milieu horizontalement */
+  top: 50%; /* Positionne l'élément au milieu verticalement */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); /* Centre l'élément */
+  width: 0.8px; /* Largeur de la ligne */
+  height: 100%; /* Hauteur de la ligne */
+  background: rgb(218, 218, 218);
+}
+.down-section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgb(218, 218, 218);
+  top: 0;
+}
+.down-section h3 {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+  padding-bottom: 20px;
+}
+.down-section h2 {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  line-height: 25px;
+}
+.down-section img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.down-section p {
+  font-size: 0.7rem;
+  padding-bottom: 30px;
+}
+.down-section .left-part {
+  width: 50%;
+  margin: 0 40px;
+}
+.down-section .left-part h2 {
+  width: 40%;
+  margin: 0 auto;
+}
+.down-section .right-part {
+  width: 50%;
+  margin: 0 40px;
+}
+.down-section .right-part h2 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-part {
+  background: rgb(229, 229, 229);
+  width: 70%;
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.form-part::before {
+  content: "";
+  position: absolute;
+  background: rgb(197, 197, 197);
+  height: 100%;
+  width: 0.8px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.form-part form {
+  width: 50%;
+  padding: 40px;
+}
+.form-part form .form-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-part form .form-grid div {
+  padding-bottom: 15px;
+}
+.form-part form .form-grid label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #787878;
+  text-transform: uppercase;
+}
+.form-part form .form-grid textarea {
+  height: 150px;
+  resize: none;
+}
+.form-part form .form-grid input[type=text],
+.form-part form .form-grid textarea {
+  outline: none;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background: transparent;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.form-part form .form-grid input[type=text]:focus,
+.form-part form .form-grid textarea:focus {
+  border: 1px solid skyblue;
+}
+.form-part form .button {
+  margin-top: 15px;
+  border: 1px solid #787878;
+  color: #787878;
+}
+.form-part form .button:hover {
+  color: rgb(245, 245, 245);
+  background: #787878;
+}
+.form-part .right-form {
+  width: 50%;
+  display: grid;
+}
+.form-part .right-form div {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 30px;
+}
+.form-part .right-form div::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+.form-part .right-form div h2 {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #787878;
+  text-transform: uppercase;
+}
+.form-part .right-form div p {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #787878;
+  text-align: left;
+}
+.form-part .right-form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.form-part .right-form ul li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+.form-part .right-form ul li a {
+  color: rgb(18, 18, 18);
+  font-size: 0.8rem;
+}
+.form-part .right-form .address p {
+  line-height: 20px;
 }/*# sourceMappingURL=index.css.map */
