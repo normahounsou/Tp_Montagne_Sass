@@ -67,43 +67,22 @@ header .container h1 {
   color: rgb(246, 246, 246);
   text-transform: uppercase;
   letter-spacing: 7px;
-  width: 40%;
+  width: 100%;
+  max-width: 1100px;
   padding-top: 200px;
-  margin: 0 auto 30px;
 }
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 640px) {
   header .container h1 {
-    width: 40%;
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 1242px) {
-  header .container h1 {
-    width: 42%;
-    font-size: 2.8rem;
-  }
-}
-@media screen and (max-width: 1185px) {
-  header .container h1 {
-    width: 50%;
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 480px) {
   header .container h1 {
-    width: 70%;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
-@media screen and (max-width: 604px) {
+@media screen and (max-width: 390px) {
   header .container h1 {
-    width: 84%;
-    font-size: 2.2rem;
-  }
-}
-@media screen and (max-width: 475px) {
-  header .container h1 {
-    width: 95%;
     font-size: 1.5rem;
   }
 }
@@ -329,30 +308,68 @@ nav .icons li:hover {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
 }
+@media screen and (max-width: 1040px) {
+  .up-section h3::before {
+    width: 35%;
+  }
+  .up-section h3::after {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .up-section h3::before {
+    width: 30%;
+  }
+  .up-section h3::after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .up-section h3::before {
+    width: 25%;
+  }
+  .up-section h3::after {
+    width: 25%;
+  }
+}
 @media screen and (max-width: 475px) {
   .up-section h3 {
     font-size: 0.7rem;
   }
   .up-section h3::before {
     width: 20%;
+    top: 8px;
   }
   .up-section h3::after {
     width: 20%;
+    top: 8px;
   }
 }
 .up-section h2 {
   text-align: center;
   font-size: 3rem;
-  width: 65%;
-  margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding-bottom: 40px;
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 1040px) {
+  .up-section h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .up-section h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .up-section h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 373px) {
   .up-section h2 {
     font-size: 1.2rem;
-    width: 90%;
   }
 }
 .up-section p {
@@ -510,9 +527,29 @@ nav .icons li:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 475px) {
+  .form-part {
+    width: 80%;
+    display: block;
+  }
+  .form-part::before {
+    height: auto;
+    width: auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  .form-part {
+    min-height: 100vh;
+  }
+}
 .form-part form {
   width: 50%;
   padding: 40px;
+}
+@media screen and (max-width: 475px) {
+  .form-part form {
+    width: 100%;
+  }
 }
 .form-part form .form-grid {
   display: -webkit-box;
@@ -566,6 +603,12 @@ nav .icons li:hover {
   width: 50%;
   display: grid;
 }
+@media screen and (max-width: 380px) {
+  .form-part .right-form {
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 .form-part .right-form div {
   display: grid;
   grid-template-columns: 30% 60%;
@@ -586,6 +629,11 @@ nav .icons li:hover {
           transform: translateX(-50%);
   bottom: 0;
 }
+@media screen and (max-width: 380px) {
+  .form-part .right-form div {
+    padding: 20px 30px;
+  }
+}
 .form-part .right-form div h2 {
   font-size: 0.6rem;
   font-weight: 500;
@@ -596,9 +644,12 @@ nav .icons li:hover {
 .form-part .right-form div p {
   font-size: 0.6rem;
   font-weight: 500;
-  letter-spacing: 1px;
   color: #787878;
-  text-align: left;
+}
+@media screen and (max-width: 380px) {
+  .form-part .right-form div p {
+    font-size: 0.5rem;
+  }
 }
 .form-part .right-form ul {
   display: -webkit-box;
@@ -609,6 +660,11 @@ nav .icons li:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
+}
+@media screen and (max-width: 380px) {
+  .form-part .right-form ul {
+    width: 100%;
+  }
 }
 .form-part .right-form ul li a {
   color: rgb(18, 18, 18);
@@ -632,6 +688,13 @@ nav .icons li:hover {
 .form-part .right-form ul li a:hover {
   color: rgb(246, 246, 246);
   background: rgb(18, 18, 18);
+}
+@media screen and (max-width: 380px) {
+  .form-part .right-form ul li a {
+    width: 25px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
 }
 .form-part .right-form .address p {
   line-height: 20px;
