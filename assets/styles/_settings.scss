@@ -10,10 +10,20 @@
     src: url(../fonts/Merriweather/Merriweather-Light.ttf);
 }
 
+$font1: Inter, sans-serif;
+$font2: Merriweather, serif;
+
 // Variables
 $black: rgb(18, 18, 18);
 $gray: rgb(73, 73, 73);
 $white: rgb(246, 246, 246);
+
+@mixin title {
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+// Pour la mixin, finalement je ne l'ai pas incorporé, mais je devais le faire, je devrais mettre include title 
 
 * {
     margin: 0;
@@ -32,12 +42,12 @@ li {
 
 h3,
 p {
-    font-family: "Merriweather", sans-serif;
+    font-family: $font2;
 }
 
 body {
     min-height: 100vh;
-    font-family: "Inter", sans-serif;
+    font-family: $font1;
     background: url(/assets/img/bg.jpg) center/cover fixed;
 }
 

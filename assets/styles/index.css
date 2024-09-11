@@ -25,12 +25,12 @@ li {
 
 h3,
 p {
-  font-family: "Merriweather", sans-serif;
+  font-family: Merriweather, serif;
 }
 
 body {
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   background: url(/assets/img/bg.jpg) center/cover fixed;
 }
 
@@ -194,10 +194,6 @@ nav .list {
   display: -ms-flexbox;
   display: flex;
 }
-nav .list .active {
-  background: rgb(229, 229, 229);
-  color: rgb(18, 18, 18);
-}
 nav .list li {
   text-transform: uppercase;
   color: rgb(246, 246, 246);
@@ -238,6 +234,7 @@ nav .icons li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: rgb(246, 246, 246);
   cursor: pointer;
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
@@ -461,8 +458,8 @@ nav .icons li:hover {
   margin: 0 40px;
 }
 .down-section .left-part h2 {
-  width: 40%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
 }
 @media screen and (max-width: 475px) {
   .down-section .left-part h2 {
@@ -486,8 +483,8 @@ nav .icons li:hover {
   margin: 0 40px;
 }
 .down-section .right-part h2 {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
 }
 @media screen and (max-width: 475px) {
   .down-section .right-part h2 {

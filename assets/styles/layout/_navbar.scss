@@ -18,10 +18,10 @@ nav {
     .list {
         display: flex;
 
-        .active {
-            background: rgb(229, 229, 229);
-            color: $black;
-          }
+        // .active {
+        //     background: rgb(229, 229, 229);
+        //     color: $black;
+        //   }
             li {
                 text-transform: uppercase;
                 color: $white;
@@ -61,6 +61,7 @@ nav {
             padding: 0 30px;
             display: flex;
             align-items: center;
+            color: $white;
             cursor: pointer;
             transition: 0.15s ease-in-out;
 
