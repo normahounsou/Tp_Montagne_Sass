@@ -1,12 +1,16 @@
 .button {
     text-transform: uppercase;
-    background: transparent;
+    background: none;
     outline: none;
     border: 1px solid $black;
     font-size: 0.6rem;
     font-weight: 800;
     color: $black;
-    padding: 10px 30px;
+    // padding: 10px 30px;
+
+    // en fait, en mettant de width et de height au boutton, ce ne change pas de taille malgré la taille de l'écran 
+    height: 45px;
+    width: 170px;
     cursor: pointer;
     transition: 0.3s;
 

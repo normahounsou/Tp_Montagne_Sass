@@ -1,6 +1,6 @@
 .form-part {
     background: rgb(229, 229, 229);
-    width: 70%;
+    width: 80%;
     max-width: 1100px;
     margin: 0 auto 80px;
     // padding: 40px 0;
@@ -16,16 +16,15 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 475px) {
+            display: none;
+        }
     }
 
     @media screen and (max-width: 475px) {
         width: 80%;
         display: block;
-
-        &::before {
-            height: auto;
-            width: auto;
-        }
     }
 
     @media screen and (max-width: 380px) {
@@ -68,7 +67,7 @@
                 border-radius: 4px;
                 padding: 5px;
                 border: 1px solid #ccc;
-                background: transparent;
+                background: none;
                 transition: 0.2s ease;
               }
               input[type="text"]:focus,
@@ -93,15 +92,16 @@
     .right-form {
         width: 50%;
         display: grid;
+        // border-left: 1px solid black;
 
         @media screen and (max-width: 380px) {
             width: 100%;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-rows:repeat(4, 1fr); //ça revient à 1fr 1fr 1fr 1fr
         }
 
         div {
             display: grid;
-            grid-template-columns: 30% 60%;
+            grid-template-columns: 30% 70%;
             align-items: center;
             position: relative;
             padding: 0 30px;

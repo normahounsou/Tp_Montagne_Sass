@@ -31,7 +31,13 @@ $white: rgb(246, 246, 246);
     box-sizing: border-box;
 }
 
-a {
+// pour quequand on scroll, ça scroll de façon plus belle et pro 
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+a:visited {
     text-decoration: none;
     color: $white;
 }
@@ -49,6 +55,29 @@ body {
     min-height: 100vh;
     font-family: $font1;
     background: url(/assets/img/bg.jpg) center/cover fixed;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: black;
+        // les keyframes sont là pour les animations 
+        animation: animBefore 1.5s ease forwards;
+        // animation-delay, c'est le temps qui va se passer avant que l'animation ne commence 
+        animation-delay: 0.15s;
+
+        @keyframes animBefore {
+            // to : elle va jusqu'à  
+            to {
+                opacity: 0;
+            }
+        }
+    }
 }
 
 .first-section button {

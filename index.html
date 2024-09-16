@@ -13,13 +13,13 @@
   <body>
     <header>
       <div class="container">
-        <h1>La montagne <br>ça vous gagne</h1>
+        <h1>La montagne <br />ça vous gagne</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
           voluptate id, aut deserunt dolorem eaque rerum itaque reprehenderit
           harum sed.
         </p>
-        <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
+        <a href="#section"><i class="fa-solid fa-arrow-down"></i></a>
       </div>
       <nav>
         <ul class="list">
@@ -28,22 +28,18 @@
           <li>Elements reference</li>
         </ul>
         <ul class="icons">
-          <li> <i class="fa-brands fa-twitter"></i>
-          </li>
-          <li><i class="fa-brands fa-facebook-f"></i>
-          </li>
-          <li><i class="fa-brands fa-instagram"></i>
-          </li>
-          <li><i class="fa-brands fa-github"></i>
-          </li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
         </ul>
       </nav>
     </header>
 
     <section class="first-section">
-      <div class="up-section">
+      <div class="up-section" id="section">
         <h3>April 25, 2017</h3>
-        <h2>And this is a <br>massive headline</h2>
+        <h2>And this is a <br />massive headline</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
           debitis quisquam, ipsa voluptate amet voluptatum dolores numquam
@@ -56,7 +52,7 @@
       <div class="down-section">
         <div class="left-part">
           <h3>April 24, 2017</h3>
-          <h2>Sed Magna <br>Ipsum Faucibus</h2>
+          <h2>Sed Magna <br />Ipsum Faucibus</h2>
           <img src="./assets/img/pic02.jpg" alt="montain1" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
@@ -67,7 +63,7 @@
         </div>
         <div class="right-part">
           <h3>April 22, 2017</h3>
-          <h2>Primis Eget <br>Imperdiet Lorem</h2>
+          <h2>Primis Eget <br />Imperdiet Lorem</h2>
           <img src="./assets/img/pic03.jpg" alt="montain2" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dicta
@@ -84,7 +80,8 @@
         <div class="form-grid">
           <div class="name">
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" autocomplete="off" />
+            <!--pour ne pas que quand je clique sur mon input, que ça m'affiche des trucs par défaut, je peux juste mettre auto...-->
           </div>
           <div class="email">
             <label for="email">Email</label>
@@ -101,8 +98,10 @@
       <div class="right-form">
         <div class="address">
           <h2>Address</h2>
-          <p><br>1234 Somewhere Road #87257 <br>
-             Nashville, TN 00000-0000</p>
+          <p>
+            <br />1234 Somewhere Road #87257 <br />
+            Nashville, TN 00000-0000
+          </p>
         </div>
 
         <div class="phone">
