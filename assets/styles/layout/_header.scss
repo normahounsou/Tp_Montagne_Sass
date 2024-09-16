@@ -44,12 +44,6 @@ header {
              text-align: center;
              width: 80%;
              margin: 40px auto 60px;
-
-
-             @media screen and (max-width: 475px) {
-                // font-size: 0.6rem;
-                // margin: 0 auto 50px;
-            }
          }
         
          a {
@@ -121,6 +115,10 @@ header {
                     }
     
                     @media screen and (max-width: 475px) {
+                        font-size: 0.7rem;
+                        text-align: center;
+                    }
+                    @media screen and (max-width: 360px) {
                         font-size: 0.6rem;
                         text-align: center;
                     }
@@ -145,7 +143,7 @@ header {
                 }
             }
     
-            @media screen and (max-width: 475px) {
+            @media screen and (max-width: 519px) {
                 display: none;
             }
         }
